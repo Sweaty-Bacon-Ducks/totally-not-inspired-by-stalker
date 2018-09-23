@@ -14,9 +14,12 @@ public class Gun : MonoBehaviour {
 
     private int bulletsInMagazine;
 
+    public GameEventListener listener;
+
     private void Start()
     {
         bulletsInMagazine = gunStats.magazineSize;
+        listener.Response.AddListener(ReloadEvent);
     }
 
     public void ReloadEvent()
@@ -30,21 +33,15 @@ public class Gun : MonoBehaviour {
 
     private void Update()
     {
-        //if (Input.GetKey(KeyCode.R))
-        //{
-        //    if (bulletsInMagazine < gunStats.magazineSize && reloading == false)
-        //    {
-        //        reloading = true;
-        //        StartCoroutine("Reload");
-        //    }
-        //}
-
         shootTimer += Time.deltaTime;
     }
 
     IEnumerator Reload()
     {
-        yield return new WaitForSeconds(gunStats.reloadTime);
+        GetComponent<AudioSource>().clip = gunStats.reloadSound;
+        GetComponent<AudioSource>().Play();
+
+        yield return new WaitForSeconds(GetComponent<AudioSource>().clip.length); //gunStats.reloadTime
 
         bulletsInMagazine = gunStats.magazineSize;
         reloading = false;
@@ -68,6 +65,10 @@ public class Gun : MonoBehaviour {
             GameObject bullet = Instantiate(loadedAmmo.bulletPrefab, projectileSpawn.position, projectileSpawn.rotation);
             bullet.GetComponent<Bullet>().SpawnBullet(this);
         }
+
+
+        GetComponent<AudioSource>().clip = gunStats.shootSounds[0];
+        GetComponent<AudioSource>().Play();
 
         shootTimer = 0;
         bulletsInMagazine--;

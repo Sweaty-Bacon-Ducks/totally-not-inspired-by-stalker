@@ -26,11 +26,12 @@ MonoBehaviour:
   condition: 0
   price: 0
   sprintAllowed: 0
-  shootSounds: []
+  shootSounds:
+  - {fileID: 8300000, guid: b5dd94286f9b50045812bcf15a51d59c, type: 3}
   holsterSound: {fileID: 0}
   unholsterSound: {fileID: 0}
   emptySound: {fileID: 0}
-  reloadSound: {fileID: 0}
+  reloadSound: {fileID: 8300000, guid: cf33d16710222e441ab1341793099272, type: 3}
   ammoClass: 0
   weaponClass: 1
   JammingModifier: 0
