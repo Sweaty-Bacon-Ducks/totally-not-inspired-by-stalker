@@ -20,7 +20,7 @@ public class CameraScript : MonoBehaviour {
     {
         var mousePos = Input.mousePosition;
         mousePos.z = mouseRange;
-        Vector3 CursorPosition = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector3 CursorPosition = cam.ScreenToWorldPoint(mousePos);
 
         Vector3 Center = new Vector3((target.position.x + CursorPosition.x) / 2 + offset.x, target.position.y + offset.y, (target.position.z + CursorPosition.z) / 2 + offset.z);
 
