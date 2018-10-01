@@ -6,11 +6,5 @@ using UnityEngine;
 public class WeaponType : ScriptableObject {
 
     public List<AmmoType> AmmoTypes;
-    public WeaponClass WeaponClass;
+    public EmptyVariable WeaponClass;
 }
-
-public enum WeaponClass
-{
-    Pistol,
-    Shotgun
-};

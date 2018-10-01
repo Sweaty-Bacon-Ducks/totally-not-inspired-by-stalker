@@ -9,20 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1341719050026814}
+  m_RootGameObject: {fileID: 1051179118776148}
   m_IsPrefabAsset: 1
---- !u!1 &1341719050026814
+--- !u!1 &1051179118776148
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4385848644096332}
-  - component: {fileID: 33595640895048358}
-  - component: {fileID: 23416362559776790}
-  - component: {fileID: 65050653481438350}
-  - component: {fileID: 114568052957738866}
+  - component: {fileID: 4180626223753486}
+  - component: {fileID: 33887175872289906}
+  - component: {fileID: 23384917348049566}
+  - component: {fileID: 65020950766215512}
+  - component: {fileID: 114629006913537358}
+  - component: {fileID: 114859461213726970}
+  - component: {fileID: 114623488183822936}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -30,14 +32,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1409467361314258
+--- !u!1 &1062457434840282
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4985971941561818}
+  - component: {fileID: 4938188822479608}
   m_Layer: 0
   m_Name: BulletSpawn
   m_TagString: Untagged
@@ -45,39 +47,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4385848644096332
+--- !u!4 &4180626223753486
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341719050026814}
+  m_GameObject: {fileID: 1051179118776148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.32, z: 0.73}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.29091, y: 0.29091, z: 0.806868}
   m_Children:
-  - {fileID: 4985971941561818}
+  - {fileID: 4938188822479608}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4985971941561818
+--- !u!4 &4938188822479608
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1409467361314258}
+  m_GameObject: {fileID: 1062457434840282}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.851}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4385848644096332}
+  m_Father: {fileID: 4180626223753486}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23416362559776790
+--- !u!23 &23384917348049566
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341719050026814}
+  m_GameObject: {fileID: 1051179118776148}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -107,43 +109,91 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33595640895048358
+--- !u!33 &33887175872289906
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341719050026814}
+  m_GameObject: {fileID: 1051179118776148}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65050653481438350
+--- !u!65 &65020950766215512
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341719050026814}
+  m_GameObject: {fileID: 1051179118776148}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114568052957738866
+--- !u!114 &114623488183822936
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341719050026814}
+  m_GameObject: {fileID: 1051179118776148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1734d63dbfb3adf4a956655ae27c9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 47c59d2dc3fb31b46b141dd00cd86f0b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114629006913537358}
+        m_MethodName: FireCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114629006913537358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051179118776148}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4914a30dfb2eb234787136c5443399c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireCheckEvent: {fileID: 11400000, guid: a514aad4122500d44b7fba7ed06a3f23, type: 2}
-  ReloadEvent: {fileID: 11400000, guid: 47c59d2dc3fb31b46b141dd00cd86f0b, type: 2}
-  GunStats: {fileID: 11400000, guid: 0b70289b27658f045867ca652fdad05d, type: 2}
-  LoadedAmmo: {fileID: 11400000, guid: d78c9fea1e716794da00fef63f7185ca, type: 2}
-  BulletsInMagazine: {fileID: 11400000, guid: 65bec9fb109138c4cbab97d6b86c34cc, type: 2}
-  NextFireTimer: {fileID: 11400000, guid: 99b6fa9b7dfffc14aaa9201f94e4d1bb, type: 2}
-  IsReloading: {fileID: 11400000, guid: 4b1b14f4fcaf2dd41a3301dac6e53d27, type: 2}
-  ReloadListener: {fileID: 0}
-  FireCheckListener: {fileID: 0}
-  projectileSpawn: {fileID: 4985971941561818}
+  GunsReference: {fileID: 11400000, guid: ebee97419024d5b408610daa32a6f6c0, type: 2}
+  GunStats: {fileID: 11400000, guid: af6f34c53a6d02843b4bbd0ef96621f5, type: 2}
+--- !u!114 &114859461213726970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1051179118776148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1734d63dbfb3adf4a956655ae27c9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a514aad4122500d44b7fba7ed06a3f23, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114629006913537358}
+        m_MethodName: FireCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

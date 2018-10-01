@@ -17,7 +17,7 @@ namespace SO.UI
         /// If there's a gameEvent assigned it will automaticall call the Raise() method.
         /// </summary>
 
-        public override void Response()
+        public override void OnEventRaised()
         {
             if (gameEvent != null)
                 Raise();

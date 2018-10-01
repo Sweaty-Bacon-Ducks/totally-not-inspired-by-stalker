@@ -9,31 +9,16 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1534853624628324}
+  m_RootGameObject: {fileID: 1793466360062680}
   m_IsPrefabAsset: 1
---- !u!1 &1283526684516922
+--- !u!1 &1055302995617828
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4210620869130612}
-  m_Layer: 0
-  m_Name: BulletSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1441866061243884
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4924478495479588}
+  - component: {fileID: 4491739554644158}
   m_Layer: 10
   m_Name: EjectTransform
   m_TagString: Untagged
@@ -41,19 +26,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1534853624628324
+--- !u!1 &1793466360062680
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4010551032002854}
-  - component: {fileID: 33219096700957780}
-  - component: {fileID: 23086922819807840}
-  - component: {fileID: 65498048375805852}
-  - component: {fileID: 114276282106841346}
-  - component: {fileID: 82305114425312500}
+  - component: {fileID: 4754291132383458}
+  - component: {fileID: 33014131367296914}
+  - component: {fileID: 23045793678048890}
+  - component: {fileID: 65020809910118706}
+  - component: {fileID: 114944546810687166}
+  - component: {fileID: 114055277216320098}
+  - component: {fileID: 114737362645327670}
+  - component: {fileID: 82417819055036698}
   m_Layer: 0
   m_Name: Shotgun
   m_TagString: Untagged
@@ -61,53 +48,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4010551032002854
+--- !u!1 &1834419402564428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4017304006425980}
+  m_Layer: 0
+  m_Name: BulletSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4017304006425980
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.32, z: 0.73}
-  m_LocalScale: {x: 0.29091, y: 0.29091, z: 0.806868}
-  m_Children:
-  - {fileID: 4210620869130612}
-  - {fileID: 4924478495479588}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4210620869130612
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283526684516922}
+  m_GameObject: {fileID: 1834419402564428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.851}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4010551032002854}
+  m_Father: {fileID: 4754291132383458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4924478495479588
+--- !u!4 &4491739554644158
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1441866061243884}
+  m_GameObject: {fileID: 1055302995617828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.171}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1.0000025}
   m_Children: []
-  m_Father: {fileID: 4010551032002854}
+  m_Father: {fileID: 4754291132383458}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23086922819807840
+--- !u!4 &4754291132383458
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1793466360062680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.29091, y: 0.29091, z: 0.806868}
+  m_Children:
+  - {fileID: 4017304006425980}
+  - {fileID: 4491739554644158}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23045793678048890
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
+  m_GameObject: {fileID: 1793466360062680}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -137,31 +139,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33219096700957780
+--- !u!33 &33014131367296914
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
+  m_GameObject: {fileID: 1793466360062680}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65498048375805852
+--- !u!65 &65020809910118706
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
+  m_GameObject: {fileID: 1793466360062680}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!82 &82305114425312500
+--- !u!82 &82417819055036698
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
+  m_GameObject: {fileID: 1793466360062680}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -251,24 +253,72 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &114276282106841346
+--- !u!114 &114055277216320098
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1534853624628324}
+  m_GameObject: {fileID: 1793466360062680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1734d63dbfb3adf4a956655ae27c9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: a514aad4122500d44b7fba7ed06a3f23, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114944546810687166}
+        m_MethodName: FireCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114737362645327670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1793466360062680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1734d63dbfb3adf4a956655ae27c9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 47c59d2dc3fb31b46b141dd00cd86f0b, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114944546810687166}
+        m_MethodName: ReloadCheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114944546810687166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1793466360062680}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4914a30dfb2eb234787136c5443399c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireCheckEvent: {fileID: 11400000, guid: a514aad4122500d44b7fba7ed06a3f23, type: 2}
-  ReloadEvent: {fileID: 11400000, guid: 47c59d2dc3fb31b46b141dd00cd86f0b, type: 2}
-  GunStats: {fileID: 11400000, guid: 2a5594c17658e2e40b69bec611651332, type: 2}
-  LoadedAmmo: {fileID: 11400000, guid: fff98716a6670f04d9c254c8f489ab79, type: 2}
-  BulletsInMagazine: {fileID: 11400000, guid: 65bec9fb109138c4cbab97d6b86c34cc, type: 2}
-  NextFireTimer: {fileID: 11400000, guid: 99b6fa9b7dfffc14aaa9201f94e4d1bb, type: 2}
-  IsReloading: {fileID: 11400000, guid: 4b1b14f4fcaf2dd41a3301dac6e53d27, type: 2}
-  ReloadListener: {fileID: 0}
-  FireCheckListener: {fileID: 0}
-  projectileSpawn: {fileID: 4210620869130612}
+  GunsReference: {fileID: 11400000, guid: ebee97419024d5b408610daa32a6f6c0, type: 2}
+  GunStats: {fileID: 11400000, guid: a0eedbba7efc59d41b813d8729f894a7, type: 2}

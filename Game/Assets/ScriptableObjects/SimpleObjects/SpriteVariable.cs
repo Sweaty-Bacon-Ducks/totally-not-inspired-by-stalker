@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/Sprite")]
+    [CreateAssetMenu(menuName = "SimpleObjects/Sprite")]
     public class SpriteVariable : ScriptableObject
     {
         public Sprite value;

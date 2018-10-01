@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/Integer")]
+    [CreateAssetMenu(menuName = "SimpleObjects/Integer")]
     public class IntVariable : NumberVariable
     {
         public int value;

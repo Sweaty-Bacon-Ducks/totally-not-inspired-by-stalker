@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/Bool")]
+    [CreateAssetMenu(menuName = "SimpleObjects/Bool")]
     public class BoolVariable : ScriptableObject
     {
         public bool value;

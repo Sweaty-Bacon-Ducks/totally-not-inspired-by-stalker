@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/Transform Array")]
+    [CreateAssetMenu(menuName = "SimpleObjects/Transform Array")]
     public class TransformArrayVariable : ScriptableObject
     {
         public Transform[] value;

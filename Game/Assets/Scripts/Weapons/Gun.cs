@@ -4,32 +4,23 @@ using UnityEngine;
 
 public class Gun : Weapon {
 
-    public GameEvent ReloadEvent;
+    public DictionaryObject GunsReference;
+
     public GunStats GunStats;
-    public AmmoType LoadedAmmo;
 
-    public GameEventListener ReloadListener;
-    public GameEventListener FireCheckListener;
-
-    public Transform projectileSpawn;
-    public GunVariables gunVars;
-
-    private void OnDisable()
-    {
-        ReloadListener.Response.RemoveListener(ReloadCheck);
-        FireCheckListener.Response.RemoveListener(FireCheck);
-    }
-
-    private void OnEnable()
-    {
-        ReloadListener.Response.AddListener(ReloadCheck);
-        FireCheckListener.Response.AddListener(FireCheck);
-    }
+    private Transform projectileSpawn;
 
     private void Start()
     {
-        gunVars = ScriptableObject.CreateInstance(typeof(GunVariables)) as GunVariables;
+        projectileSpawn = transform.Find("BulletSpawn");
         GunStats.BulletsInMagazine = GunStats.MagazineSize;
+    }
+
+    public void ChangeGunStats(GunStats gunStats)
+    {
+        this.GunStats = ScriptableObject.CreateInstance<GunStats>();
+        this.GunStats.PasteStats(gunStats);
+        GunsReference.AddGun(GunStats);
     }
 
     public void ReloadCheck()
@@ -67,7 +58,7 @@ public class Gun : Weapon {
     {
         for (int i = 0; i < GunStats.BulletCount; ++i)
         {
-            GameObject bullet = Instantiate(LoadedAmmo.BulletPrefab, projectileSpawn.position, projectileSpawn.rotation);
+            GameObject bullet = Instantiate(GunStats.LoadedAmmo.BulletPrefab, projectileSpawn.position, projectileSpawn.rotation);
             bullet.GetComponent<Bullet>().SpawnBullet(this);
         }
 

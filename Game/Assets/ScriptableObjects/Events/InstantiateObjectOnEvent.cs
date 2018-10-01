@@ -21,7 +21,7 @@ namespace SO
         public bool keepOnlyOneInstance;
         GameObject previousInstance;
 
-        public override void Response()
+        public override void OnEventRaised()
         {
             if (keepOnlyOneInstance)
             {

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmmoTypes:
   - {fileID: 11400000, guid: fff98716a6670f04d9c254c8f489ab79, type: 2}
-  WeaponClass: 1
+  WeaponClass: {fileID: 11400000, guid: b43e07a82dab92945807b741b82b1ced, type: 2}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-	[CreateAssetMenu(menuName = "Variables/Vector3")]
+	[CreateAssetMenu(menuName = "SimpleObjects/Vector3")]
 	public class Vector3Variable : ScriptableObject
 	{
 		public Vector3 value;

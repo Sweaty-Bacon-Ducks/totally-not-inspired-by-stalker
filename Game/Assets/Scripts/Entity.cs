@@ -18,7 +18,7 @@ public class Entity : MonoBehaviour
 
     public virtual void Die()
     {
-        Debug.Log("Dead");
         Destroy(gameObject);
+        Debug.Log("Dead");
     }
 }

@@ -3,44 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SO
+public class GameEventListener : MonoBehaviour
 {
-    public class GameEventListener : MonoBehaviour
+    public GameEvent gameEvent;
+    public UnityEvent response;
+
+    /// <summary>
+    /// Override this to override the OnEnableLogic()
+    /// </summary>
+    public virtual void OnEnableLogic()
     {
-        public GameEvent gameEvent;
-        public UnityEvent response;
+        if (gameEvent != null)
+            gameEvent.RegisterListener(this);
+    }
 
-        /// <summary>
-        /// Override this to override the OnEnableLogic()
-        /// </summary>
-        public virtual void OnEnableLogic()
-        {
-            if (gameEvent != null)
-                gameEvent.Register(this);
-        }
+    void OnEnable()
+    {
+        OnEnableLogic();
+    }
 
-        void OnEnable()
-        {
-            OnEnableLogic();
-        }
+    /// <summary>
+    /// Override this to override the OnDisableLogic()
+    /// </summary>
+    public virtual void OnDisableLogic()
+    {
+        if (gameEvent != null)
+            gameEvent.UnregisterListener(this);
+    }
 
-        /// <summary>
-        /// Override this to override the OnDisableLogic()
-        /// </summary>
-        public virtual void OnDisableLogic()
-        {
-            if (gameEvent != null)
-                gameEvent.UnRegister(this);
-        }
+    void OnDisable()
+    {
+        OnDisableLogic();
+    }
 
-        void OnDisable()
-        {
-            OnDisableLogic();
-        }
-
-        public virtual void Response()
-        {
-            response.Invoke();
-        }
+    public virtual void OnEventRaised()
+    {
+        response.Invoke();
     }
 }

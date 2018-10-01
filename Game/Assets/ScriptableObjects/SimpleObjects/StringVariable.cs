@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/String")]
+    [CreateAssetMenu(menuName = "SimpleObjects/String")]
     public class StringVariable : ScriptableObject
     {
         public string value;

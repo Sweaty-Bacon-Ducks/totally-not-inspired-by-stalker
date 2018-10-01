@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SO
 {
-    [CreateAssetMenu(menuName = "Variables/Float")]
+    [CreateAssetMenu(menuName = "SimpleObjects/Float")]
     public class FloatVariable : NumberVariable
     {
         public float value;
